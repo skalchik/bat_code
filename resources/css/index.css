@@ -6,3 +6,8 @@ body {
     align-items: center;
 
 }
+
+img {
+    max-height: 200px;
+    max-width: auto;
+}
