@@ -4,10 +4,16 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../../resources/images/night-sky2.jpg);
+    background-size: cover;
 
 }
 
 img {
     max-height: 200px;
     max-width: auto;
+}
+
+h1 {
+    color: antiquewhite;
 }
