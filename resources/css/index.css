@@ -1,16 +1,17 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     background-image: url(../../resources/images/night-sky2.jpg);
     background-size: cover;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-img {
+img,
+figure {
     max-height: 200px;
     max-width: auto;
     margin: 5px;
@@ -23,15 +24,35 @@ h1 {
 
 .batscol  {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    max-width: 1000px;
 
 }
 
 .batpics {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    color: antiquewhite;
+}
+
+
+.spectral {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 720px){
+    .batpics {
+        display: flex;
+        flex-direction: column;
+    }
 }
